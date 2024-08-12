@@ -1,0 +1,251 @@
+/*GERAL*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/*CABEÇALHO*/
+
+header {
+    padding: 10px 0px 10px;
+    background-color: rgb(184, 15, 15);
+}
+
+header .container{ /*Todo o cabeçalho*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 { /*TÍTULO*/
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 50px;
+    font-style: italic;
+    color: white;
+}
+
+header ul { /*Todo o menu*/
+    display: flex;
+    list-style: none;
+}
+
+.menu li { /*Cada menu*/
+    padding: 15px 15px;
+}
+
+.menu a {
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 700;
+    color: white;
+}
+
+.clear {
+    clear:both;
+}
+
+/*CONTEÚDOS*/
+/*DESTAQUE*/
+.sobre-a-loja{
+    display: flex;
+    padding: 5em 0 5em;
+}
+
+.sobre-a-loja img {
+    height: 400px;
+    padding-right: 48px;
+    max-width: 100%;
+}
+
+.sobre-a-loja h2 {
+    font-size: 1.6em;
+    padding-bottom: 16px;
+    margin-bottom: 32px;
+    border-bottom: 5px solid rgb(184, 15, 15);
+    color: rgb(184, 15, 15);
+}
+
+.sobre-a-loja p {
+    font-size: 1em;
+}
+
+/*PRODUTOS*/
+.produtos {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 24.25%);
+    column-gap: 1%;
+}
+
+.conteudo h2 {
+    font-size: 1.6em;
+    font-style: italic;
+    padding-bottom: 16px;
+    margin-bottom: 48px;
+    border-bottom: 4px solid rgb(184, 15, 15);
+    color: rgb(184, 15, 15);
+}
+
+.produtos img {
+    max-width: 100%;
+    margin-bottom: 24px;
+}
+
+.produto h3 {
+    font-size: 1.2em;
+    padding-bottom: 12px;
+    font-style: italic;
+}
+
+.produto p {
+    margin-bottom: 12px;
+}
+
+.produto button {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color: rgb(184, 15, 15);
+    color: #fff;
+    font-size: 1em;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-bottom: 40px;
+}
+
+@media screen and (min-width:641px) and (max-width:1023px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .sobre-a-loja {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sobre-a-loja img {
+        padding-right: 0px;
+        height: 30%;
+        max-width: 100%;
+        padding-bottom: 30px;
+    }
+
+    .sobre-a-loja p {
+        font-size: 1.2em;
+    }
+
+    .sobre-a-loja h2,
+    .conteudo h2 {
+        font-size: 2em;
+    }
+
+    .produtos {
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 49%);
+        column-gap: 2%;
+    }
+
+    .produto h3 {
+        font-size: 2em;
+        padding-bottom: 50px;
+    }
+
+    .produto p {
+        font-size: 1.1em;
+    }
+
+    .produto button {
+        font-size: 1.5em;
+    }
+
+    header {
+        padding: 20px 0px 20px;
+    }
+
+}
+
+/*  CELULAR   */
+@media screen and (max-width:640px) {
+    .container {
+        max-width: 86%;
+    }
+
+    header .container {
+        display: flex;
+        justify-content: flex-start;
+        padding: 30px 0;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .menu li {
+        padding: 10px 50px;
+        font-size: 1.2em;
+    }
+
+    .menu a {
+        font-size: 1.3em;
+    }
+
+    .sobre-a-loja {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sobre-a-loja h2 {
+        font-size: 2.5em;
+    }
+
+    .sobre-a-loja img {
+        padding-right: 0px;
+        height: 30%;
+        max-width: 100%;
+        padding-bottom: 30px;
+    }
+
+    .sobre-a-loja p {
+        font-size: 1.1em;
+    }
+
+    .produtos {
+        display: block;
+    }
+
+    .conteudo h2 {
+        font-size: 2.5em;
+    }
+
+    .produto h3 {
+        font-size: 2.8em;
+    }
+
+    .produto p {
+        font-size: 1.5em;
+        padding-bottom: 30px;
+    }
+
+    .produto button {
+        padding: 16px 0;
+        font-size: 24px;
+    }
+}
+
+/*  TABLET  */
+
+

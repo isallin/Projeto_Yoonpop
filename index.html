@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YoonPop</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        #cabecalho{
+            background-color: rgb(103, 8, 158);
+        }
+
+        .card{
+            background-color: rgb(103, 8, 158);
+        }
+
+        .card-body a{
+            font-weight: 700;
+            font-size: 16px;
+        }
+
+        .nav-item a{
+            color: rgb(103, 8, 158);
+        }
+
+        .nav {
+            background-color: white;
+        }
+
+        .contato {
+            background-color: rgb(103, 8, 158);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <ul class="nav nav-pills nav-fill p-2 fixed-top">
+            <li class="nav-item h4">
+            <a class="nav-link" href="#">SOBRE</a>
+            </li>
+            <li class="nav-item h4">
+            <a class="nav-link" href="#">PRODUTOS</a>
+            </li>
+            <li class="nav-item h4">
+            <a class="nav-link" href="#">CONTATO</a>
+            </li>
+        </ul>
+    </div>
+    <div class="container-fluid">
+        <div id="cabecalho" class="row bg-cor align-items-center">
+            <div class="col-xl-5 text-white mt-md-5 p-5">
+                <h1 class="display-1">Yoon<span class="text-warning">Pop</span> Store</h1>
+                <p class="display-6">Conforto, estilo, inovação e street em um único lugar</p>
+                <a class="btn btn-outline-light text-white" href="#">Saiba mais</a>
+            </div>
+            <div class="col-xl-7 p-0">
+                <div id="sessao-de-fotos" class="carousel carousel-fade slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div data-bs-interval="3000" class="carousel-item active">
+                            <img class="w-100" src="./img/foto1.jpg">
+                        </div>
+                        <div data-bs-interval="3000" class="carousel-item">
+                            <img class="w-100" src="./img/foto2.jpg">
+                        </div>
+                        <div data-bs-interval="3000" class="carousel-item">
+                            <img class="w-100" src="./img/foto3.jpg">
+                        </div>
+                        <button data-bs-target="#sessao-de-fotos" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button data-bs-target="#sessao-de-fotos" data-bs-slide="next" class="carousel-control-next" type="button">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#sessao-de-fotos" class="active" data-bs-slide-to="0"></button>
+                            <button type="button" data-bs-target="#sessao-de-fotos" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#sessao-de-fotos" data-bs-slide-to="2"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row pb-10">
+            <div class="col-12 display-3 mt-4 text-center">
+                POPULARES
+            </div>
+            <div class="col-12 h5 text-center">
+                Confira as peças queridinhas dos YoonPoppers
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 display-6 mt-4">
+                <div class="card text-white">
+                    <div class="card-header text-center">
+                        JOGGER BLACK
+                    </div>
+                    <img src="https://mundostreet.com/cdn/shop/products/H7c6a23b9dddb4c5a81a36eddf82f8f00H_800x.jpg?v=1645508801">
+                    <div class="card-body">
+                        <h4 class="card-title text-warning">Coleção de inverno</h4>
+                        <p class="card-text display-6"><del>R$399</del> R$299</p>
+                        <a href="#" class="btn btn-warning">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 display-6 mt-4">
+                <div class="card text-white">
+                    <div class="card-header text-center">
+                        JAQUETA DUO
+                    </div>
+                    <img src="https://www.gatogeek.com.br/cdn/shop/files/jaqueta-streetwear-colorida-jaqueta-gatogeek-910994.jpg?v=1720067814">
+                    <div class="card-body">
+                        <h4 class="card-title text-warning">Coleção de inverno</h4>
+                        <p class="card-text display-6">R$499</p>
+                        <a href="#" class="btn btn-warning h-3">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 display-6 mt-4">
+                <div class="card text-white">
+                    <div class="card-header text-center">
+                        JAQUETA HYPE
+                    </div>
+                    <img src="https://www.dhresource.com/webp/m/0x0/f2/albu/g16/M01/A4/A0/rBVa4F_-6-aAd8EXAAXk4E8YRbc627.jpg">
+                    <div class="card-body">
+                        <h4 class="card-title text-warning">Coleção de inverno</h4>
+                        <p class="card-text display-6">R$399</p>
+                        <a href="#" class="btn btn-warning h-3">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 display-6 mt-4">
+                <div class="card text-white">
+                    <div class="card-header text-center">
+                        BRAT 360
+                    </div>
+                    <img src="https://i.etsystatic.com/34279716/r/il/daeeb8/3709931682/il_570xN.3709931682_l5eh.jpg">
+                    <div class="card-body">
+                        <h4 class="card-title text-warning">Coleção FEAT</h4>
+                        <p class="card-text display-6">R$299</p>
+                        <a href="#" class="btn btn-warning h-3">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 display-6 mt-4">
+                <div class="card text-white">
+                    <div class="card-header text-center">
+                        JOGGER ULTRA
+                    </div>
+                    <img src="https://i5.walmartimages.com/seo/Niepce-Inc-Black-Streetwear-Men-s-Techwear-Pants_591fe18c-3a1c-4b10-a92a-2d76803d21b6.0ae0eb7efebc8da4ab274e7ade474d3e.jpeg">
+                    <div class="card-body">
+                        <h4 class="card-title text-warning">Coleção de inverno</h4>
+                        <p class="card-text display-6"><del>R$499</del> R$399</p>
+                        <a href="#" class="btn btn-warning h-3">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 display-6 mt-4">
+                <div class="card text-white">
+                    <div class="card-header text-center">
+                        POLVO IRADO
+                    </div>
+                    <img src="https://jdmglobalwarehouse.com/cdn/shop/products/takoyaki-version-2-jdm-streetwear-t-shirt-5-colors-jdm-global-warehouse-1.jpg?v=1721055990">
+                    <div class="card-body">
+                        <h4 class="card-title text-warning"><del>Título do card</del></h4>
+                        <p class="card-text display-6"><del>R$250</del> R$199</p>
+                        <a href="#" class="btn btn-warning h-3">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contato mt-5">
+        <div class="row align-items-center">
+            <div class="col-12 display-6 mt-4 text-center text-white">
+                CONTATO
+            </div>
+            <div class="col-6 mt-4 text-center">
+                <p class="h4 text-white">YoonStore@pop.com</p>
+                <p class="h4 text-white">(11)99999-9999</p>
+            </div>
+            <div class="col-6 mt-4 text-center">
+                <a class="btn btn-outline-light btn-block m-1">Instagram</p>
+                <a class="btn btn-outline-light btn-block m-1">Facebook</p>
+                <a class="btn btn-outline-light btn-block m-1">Youtube</p>
+            </div>
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
